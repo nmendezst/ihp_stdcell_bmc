@@ -1,0 +1,21 @@
+[tasks]
+task_a22oi_1 	a22oi_1
+task_and2_1 	and2_1
+
+[options]
+mode bmc
+depth 20
+
+[engines]
+smtbmc
+
+[script]
+
+a22oi_1:	read -formal sg13g2_a22oi_1.v
+a22oi_1:	prep -top sg13g2_a22oi_1
+and2_1: 	read -formal sg13g2_and2_1.v
+and2_1: 	prep -top sg13g2_and2_1
+
+[files]
+sg13g2_a22oi_1.v
+sg13g2_and2_1.v
